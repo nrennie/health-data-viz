@@ -1,2 +1,3 @@
-# health-data-viz
+# Visualising Health
+
 Visualisations of health-related data.
