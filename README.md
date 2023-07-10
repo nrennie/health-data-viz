@@ -20,4 +20,4 @@ Below are a list of places to find health-related data (primarily for the UK):
 
 * General Health in the 2021 Census: [www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandwellbeing/bulletins/generalhealthenglandandwales/census2021](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandwellbeing/bulletins/generalhealthenglandandwales/census2021). Accessed 10 Jul 2023.
 
-* Local authority maps: [geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-december-2021-gb-bgc-1](https://geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-december-2021-gb-bgc-1)
+* Local authority maps: [geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-december-2021-gb-bgc-1](https://geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-december-2021-gb-bgc-1). Accessed 10 Jul 2023.
