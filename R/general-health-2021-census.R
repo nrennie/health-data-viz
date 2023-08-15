@@ -9,8 +9,7 @@ la_map <- sf::st_read("Data/Local_Authority_Districts_December_2021/LAD_DEC_2021
 
 # calculate percentage that have bad/very bad
 bad_health <- census |> 
-  mutate(Percentage = `Bad health \r\n(age-standardised \r\nproportions)` + 
-           `Very bad health \r\n(age-standardised \r\nproportions)`) |> 
+  mutate(Percentage = `Bad health \r\n(age-standardised \r\nproportions)` + `Very bad health \r\n(age-standardised \r\nproportions)`) |> 
   select(`Area code`, Percentage) 
 
 # highest / lowest percentage
@@ -37,10 +36,7 @@ ggplot() +
        caption = cap) +
   scale_fill_carto_c(palette = "BurgYl", limits = c(2, 10)) +
   guides(fill = guide_colorbar(title = "Percentage reporting bad or very bad health",
-                               title.position = "top",
-                               title.hjust = 0.5,
-                               barwidth = 15,
-                               barheight = 0.7)) +
+                               title.position = "top", title.hjust = 0.5, barwidth = 15, barheight = 0.7)) +
   theme_map(base_size = 18)
 
 # save
