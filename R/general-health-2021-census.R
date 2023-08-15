@@ -31,12 +31,9 @@ st <- "Census 2021 respondents were asked to rate their general health as being 
 # plot
 ggplot() +
   geom_sf(data = map_data, mapping = aes(fill = Percentage), colour = "black", linewidth = 0.1) +
-  labs(title = "Percentage of people reporting bad or very bad general health in the 2021 Census",
-       subtitle = st,
-       caption = cap) +
+  labs(title = "Percentage of people reporting bad or very bad general health in the 2021 Census", subtitle = st, caption = cap) +
   scale_fill_carto_c(palette = "BurgYl", limits = c(2, 10)) +
-  guides(fill = guide_colorbar(title = "Percentage reporting bad or very bad health",
-                               title.position = "top", title.hjust = 0.5, barwidth = 15, barheight = 0.7)) +
+  guides(fill = guide_colorbar(title = "Percentage reporting bad or very bad health", title.position = "top", title.hjust = 0.5, barwidth = 15, barheight = 0.7)) +
   theme_map(base_size = 18)
 
 # save

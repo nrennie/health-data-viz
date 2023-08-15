@@ -8,10 +8,8 @@ font_add_google("Roboto Slab")
 showtext_auto()
 
 #' Theme for {ggplot2} plots
-#' @param main_family Name of font family to use for most of the text in the
-#' plot. Default "Roboto".
-#' @param title_family Name of font family to use for title of the plot.
-#' Default "Roboto Slab".
+#' @param main_family Name of font family to use for most of the text in the plot. Default "Roboto".
+#' @param title_family Name of font family to use for title of the plot. Default "Roboto Slab".
 #' @param bg_colour Background colour of plot. Default "white".
 #' @param text_colour Text colour in plot. Default "black".
 #' @param base_size Base size of text. Default 13.
