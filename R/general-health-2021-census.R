@@ -25,22 +25,13 @@ map_data <- la_map |>
 
 # text
 social <- "<span style='font-family:\"Font Awesome 6 Brands\";color:black;'>&#xf099;</span><span style='color:white;'>.</span><span style='font-family:Roboto;color:black;'>@nrennie35</span><span style='color:white;'>..</span><span style='font-family:\"Font Awesome 6 Brands\";color:black;'>&#xf4f6;</span><span style='color:white;'>.</span><span style='font-family:Roboto;color:black;'>fosstodon.org/@nrennie</span><span style='color:white;'>..</span><span style='font-family:\"Font Awesome 6 Brands\";color:black;'>&#xf09b;</span><span style='color:white;'>.</span><span style='font-family:Roboto;color:black;'>nrennie</span><span style='color:white;'>..</span>"
-cap <- paste0("**Data**: Office for National Statistics (ONS). General health, England 
-              and Wales: Census 2021.<br>**Graphic**: ", social)
+cap <- paste0("**Data**: Office for National Statistics (ONS). General health, England and Wales: Census 2021.<br>**Graphic**: ", social)
 
-st <- "Census 2021 respondents were asked to rate their general health as being either 
-*very good*, *good*, *fair*, *bad*, or *very bad*. The map below shows 
-the (age-standardised) percentage of respondents in each local authority who 
-rated their health as being bad or very bad. 
-Tower Hamlets and Merthyr Tydfil had the joint highest percentage of people reporting bad 
-or very bad health at 9.5%. The average across all local authorities is 5.3%."
+st <- "Census 2021 respondents were asked to rate their general health as being either *very good*, *good*, *fair*, *bad*, or *very bad*. The map below shows the (age-standardised) percentage of respondents in each local authority who rated their health as being bad or very bad. Tower Hamlets and Merthyr Tydfil had the joint highest percentage of people reporting bad or very bad health at 9.5%. The average across all local authorities is 5.3%."
 
 # plot
 ggplot() +
-  geom_sf(data = map_data,
-          mapping = aes(fill = Percentage),
-          colour = "black",
-          linewidth = 0.1) +
+  geom_sf(data = map_data, mapping = aes(fill = Percentage), colour = "black", linewidth = 0.1) +
   labs(title = "Percentage of people reporting bad or very bad general health in the 2021 Census",
        subtitle = st,
        caption = cap) +
@@ -53,7 +44,4 @@ ggplot() +
   theme_map(base_size = 18)
 
 # save
-ggsave("Images/general-health-2021-census-a.png",
-       width = 4,
-       height = 6,
-       units = "in")
+ggsave("Images/general-health-2021-census-a.png", width = 4, height = 6, units = "in")
